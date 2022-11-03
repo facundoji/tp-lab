@@ -1,0 +1,64 @@
+#include<iostream>
+using namespace std;
+#include "funciones.h"
+
+
+
+int main(void){
+     int opc;
+
+    while(true){
+            
+            //opciones del recuadro
+        textcolor(0,0);
+        clrscr();
+        recuadro(8, 1, 40, 16, cAMARILLO, cGRIS);
+        textcolor(cAMARILLO, cGRIS);
+        gotoxy(10,2);
+        
+        //lo que se muestra del menu
+        cout << "1 - Partida Un Jugador";
+        gotoxy(10,3);
+        cout << "2 - Partida Versus ";
+        gotoxy(10, 4);
+        cout << "3 - Guardar Puntuacion Mas alta";
+        gotoxy(10, 5);
+        cout << "5 - Salir";
+        gotoxy(10, 7);
+        cout << "Ingresar opcion: ";
+        cin >> opc;
+
+
+        switch(opc){
+
+            case 1:
+
+
+            break;
+
+            case 2:
+
+
+            break;
+
+            case 3:
+
+            break;
+
+            case 5:
+                return 0;
+
+            break;
+            
+//mal dijito del menu de opciones
+            default:
+                gotoxy(12, 15);
+                textcolor(cROJO_CLARO);
+                cout << "Opcion de menu invalida";
+                pause();
+            break;
+        }
+    }
+    pause();
+}
+
